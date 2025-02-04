@@ -1,0 +1,41 @@
+.container {
+    display: flex;  
+    align-items: flex-start; 
+}
+
+#part1 img {
+    width: 50vh;  
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+#part2 img {
+    width: 750px; 
+    height: 27vh;
+    object-fit: cover;
+}
+
+#part3 {
+    position: relative; /* Normal positioning */
+    right: 0; /* Aligns to right */
+    z-index: 1000; /* Ensures it stays on top */
+}
+
+#part3 img {
+    width: 750px; /* Same width as #part2 */
+    height: 27vh;
+    object-fit: fill;
+}
+
+.text-area {
+    width: calc(100% - 480px); /* Adjust width to fill left-out space */
+    background-color: rgba(240, 240, 240, 0.9);
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-top: -700px; /* Keep text aligned */
+    margin-left: 480px; /* Push text into the empty space */
+    word-wrap: break-word; /* Ensures text wraps if necessary */
+}
